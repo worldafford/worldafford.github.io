@@ -134,7 +134,26 @@
                 <h2 class="title is-3">Abstract</h2>
                 <div class="content has-text-justified">
                     <p style="font-size: 125%">
-                        It is a long-lasting goal to design an embodied system that can solve long-horizon open-world tasks in human-like ways. However, existing approaches usually struggle with compound difficulties caused by the logic-aware decomposition and context-aware execution of these tasks. To this end, we introduce MP5, an open-ended multimodal embodied system built upon the challenging Minecraft simulator, which can decompose feasible sub-objectives, design sophisticated situation-aware plans, and perform embodied action control, with frequent communication with a goal-conditioned active perception scheme. Specifically, MP5 is developed on top of recent advances in Multimodal Large Language Models (MLLMs), and the system is modulated into functional modules that can be scheduled and collaborated to ultimately solve pre-defined context- and process-dependent tasks. Extensive experiments prove that MP5 can achieve a 22% success rate on difficult process-dependent tasks and a 91% success rate on tasks that heavily depend on the context. Moreover, MP5 exhibits a remarkable ability to address many open-ended tasks that are entirely novel.
+     Affordance grounding aims to localize the interaction regions
+for the manipulated objects in the scene image according to given instructions, which is essential for Embodied AI and manipulation tasks.
+A critical challenge in affordance grounding is that the embodied agent
+should understand human instructions and analyze which tools in the
+environment can be used, as well as how to use these tools to accomplish the instructions. Most recent works primarily supports simple action labels as input instructions for localizing affordance regions, failing
+to capture complex human objectives. Moreover, these approaches typically identify affordance regions of only a single object in object-centric
+images, ignoring the object context and struggling to localize affordance
+regions of multiple objects in complex scenes for practical applications.
+To address this concern, for the first time, we introduce a new task of
+affordance grounding based on natural language instructions, extending
+it from previously using simple labels for complex human instructions.
+For this new task, we propose a new framework, WorldAfford. We design a novel Affordance Reasoning Chain-of-Thought Prompting to reason about affordance knowledge from LLMs more precisely and logically.
+Subsequently, we use SAM and CLIP to localize the objects related to the
+affordance knowledge in the image. We identify the affordance regions of
+the objects through an affordance region localization module. To benchmark this new task and validate our framework, an affordance grounding
+dataset, LLMaFF, is constructed. We conduct extensive experiments to
+verify that WorldAfford performs state-of-the-art on both the previous
+AGD20K and the new LLMaFF dataset. In particular, WorldAfford can
+localize the affordance regions of multiple objects and provide an alternative when objects in the environment cannot fully match the given
+instruction.
                     </p>
                 </div>
             </div>
