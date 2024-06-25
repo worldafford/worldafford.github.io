@@ -231,18 +231,15 @@ instruction.
             <div class="rows is-centered ">
                 <div class="row is-full-width">
                     <h2 class="title is-3"><span
-                            class="dvima">Experiments of Different Tasks</span></h2>
+                            class="dvima">Experiments on two datasets</span></h2>
 
                             <section class="section">
                                 <div class="container is-max-widescreen">
                                     <div class="rows">
                                         <div class="rows is-centered ">
                                             <div class="row is-full-width">
-                                                <h4 class="title is-4"><span class="dvima">Process-Dependent Task Definition</span></h4>
-                                                <span style="font-size: 110%">Process-Dependent Tasks primarily investigate situation-aware planning and embodied action execution, incorporating contributions from Active Perception and other modules that continuously perceive the environment and dynamically adjust their actions to accomplish long-horizon tasks. 
-                                                <br>
-                                                <span style="font-size: 100%">In the table below, we list the names of all tasks in Process-Dependent Tasks, their reasoning steps, object icons, the final recipe, and the required tools/platforms. The reasoning step refers to the number of sub-objectives that need to be completed in order to finish the entire task.
-                                                <img src="assets/images/process dependent task.png" class="interpolation-image"
+                                                <h4 class="title is-4"><span class="dvima">Qualitative results on AGD20K.</span></h4>
+                                                <img src="assets/images/singe_action_label.png" class="interpolation-image"
                                                      alt="" style="display: block; margin-left: auto; margin-right: auto"/>
                                                 <br>
                                             </div>
@@ -257,11 +254,8 @@ instruction.
                                     <div class="rows">
                                         <div class="rows is-centered ">
                                             <div class="row is-full-width">
-                                                <h4 class="title is-4"><span class="dvima">Context-Dependent Task Definition</span></h4>
-                                                <span style="font-size: 110%">Context-Dependent Tasks primarily study how Active Perception enables the agent to better perceive low-level context information in the environment.
-                                                <br>
-                                                <span style="font-size: 100%">We first establish 6 aspects of environmental information derived from the Minecraft game environment: [Object, Mob, Ecology, Time, Weather, Brightness]. Each aspect has multiple options. Based on this, we define 16 tasks and organize their difficulty into 4 levels by taking into account the number of information elements that require perception as is shown in the table below. 
-                                                <img src="assets/images/context dependent task1.png" class="interpolation-image"
+                                                <h4 class="title is-4"><span class="dvima">Qualitative results on LLMaFF.</span></h4>
+                                                <img src="assets/images/multi_objects.png" class="interpolation-image"
                                                      alt="" style="display: block; margin-left: auto; margin-right: auto"/>
                                                 <br>
                                                 <span style="font-size: 100%">Easy tasks necessitate the perception of only one element, Mid tasks include 2 perception elements, Hard tasks contain 3 elements, whereas Complex tasks involve the perception of 4 to 6 elements. Each task at the same level has different environment information content, the amount of environment information contained in each task, and the corresponding specific environment information is shown in the table below.
