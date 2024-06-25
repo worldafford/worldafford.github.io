@@ -216,7 +216,7 @@ instruction.
                 <div class="row is-full-width">
                     <h2 class="title is-3"><span class="dvima">Method</span></h2>
                     <img src="assets/images/framework.png" class="interpolation-image"
-                         alt="" style="display: block; margin-left: auto; margin-right: auto"/>
+                         alt="" style="display: block; margin-left: auto; margin-right: auto; width: 100%;"/>
                 </div>
             </div>
 
@@ -240,7 +240,7 @@ instruction.
                                             <div class="row is-full-width">
                                                 <h4 class="title is-4"><span class="dvima">Qualitative results on AGD20K.</span></h4>
                                                 <img src="assets/images/singe_action_label.png" class="interpolation-image"
-                                                     alt="" style="display: block; margin-left: auto; margin-right: auto"/>
+                                                     alt="" style="display: block; margin-left: auto; margin-right: auto; width: 100%;"/>
                                                 <br>
                                             </div>
                                         </div>
@@ -256,86 +256,13 @@ instruction.
                                             <div class="row is-full-width">
                                                 <h4 class="title is-4"><span class="dvima">Qualitative results on LLMaFF.</span></h4>
                                                 <img src="assets/images/multi_objects.png" class="interpolation-image"
-                                                     alt="" style="display: block; margin-left: auto; margin-right: auto"/>
-                                                <br>
-                                                <span style="font-size: 100%">Easy tasks necessitate the perception of only one element, Mid tasks include 2 perception elements, Hard tasks contain 3 elements, whereas Complex tasks involve the perception of 4 to 6 elements. Each task at the same level has different environment information content, the amount of environment information contained in each task, and the corresponding specific environment information is shown in the table below.
-                                                <img src="assets/images/context dependent task2.png" class="interpolation-image"
-                                                     alt="" style="display: block; margin-left: auto; margin-right: auto"/>
-                                                <br>
+                                                     alt="" style="display: block; margin-left: auto; margin-right: auto; width: 100%;"/>
                                             </div>
                                         </div>
                             
                                     </div>
                                 </div>
                             </section>
-
-                            
-                            <section class="section">
-                                <div class="container is-max-widescreen">
-                                    <div class="rows">
-                                        <div class="rows is-centered ">
-                                            <div class="row is-full-width">
-                                                <h4 class="title is-4"><span class="dvima">Agent in Context-Dependent Task</span></h4>
-                                                <video poster="" id="same_color" autoplay controls muted loop height="100%">
-                                                    <source src="assets/videos/Video 2 new.mp4"
-                                                            type="video/mp4">
-                                                </video>
-                                                <br>
-                                                <!-- <span style="font-size: 110%">
-                                                    The game-playing steps corresponding to the acquisition of different milestone objects by the agent during the completion of the craft diamond pickaxe challenge. The varying background colors denote the level of the Process-Dependent Tasks in which the milestone objects are located. -->
-                                            </div>
-                                        </div>
-                            
-                                    </div>
-                                </div>
-                            </section>
-                            
-                            <section class="section">
-                                <div class="container is-max-widescreen">
-                                    <div class="rows">
-                                        <div class="rows is-centered ">
-                                            <div class="row is-full-width">
-                                                <h4 class="title is-4"><span class="dvima">Agent in Process-Dependent Task</span></h4>
-                                                <video poster="" id="same_color" autoplay controls muted loop height="100%">
-                                                    <source src="assets/videos/Video 1.mp4"
-                                                            type="video/mp4">
-                                                </video>
-                                                <br>
-                                                <!-- <span style="font-size: 110%">
-                                                    The game-playing steps corresponding to the acquisition of different milestone objects by the agent during the completion of the craft diamond pickaxe challenge. The varying background colors denote the level of the Process-Dependent Tasks in which the milestone objects are located. -->
-                                            </div>
-                                        </div>
-                            
-                                    </div>
-                                </div>
-                            </section>
-
-                            <section class="section">
-                                <div class="container is-max-widescreen">
-                                    <div class="rows">
-                                        <div class="rows is-centered ">
-                                            <div class="row is-full-width">
-                                                <h4 class="title is-4"><span class="dvima">Agent in Open-Ended Task</span></h4>
-                                                <video poster="" id="same_color" autoplay controls muted loop height="100%">
-                                                    <source src="assets/videos/Video 3.mp4"
-                                                            type="video/mp4">
-                                                </video>
-                                                <br>
-                                                <!-- <span style="font-size: 110%">
-                                                    The game-playing steps corresponding to the acquisition of different milestone objects by the agent during the completion of the craft diamond pickaxe challenge. The varying background colors denote the level of the Process-Dependent Tasks in which the milestone objects are located. -->
-                                            </div>
-                                        </div>
-                            
-                                    </div>
-                                </div>
-                            </section>
-                    
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
 
 <!--Conclusion-->
 <section class="section">
@@ -347,7 +274,13 @@ instruction.
                             class="dvima">Conclusion</span></h2>
 
                     <p style="font-size: 125%">
-                        In this paper, we propose a novel multi-modal embodied system termed MP5 which is driven by frequently ego-centric scene perception for task planning and execution. In practice, it is designed by integrating five functional modules to accomplish task planning and execution via actively acquiring essential visual information from the scene. The experimental results suggest that our system represents an effective integration of perception, planning, and execution, skillfully crafted to handle both context- and process-dependent tasks within an open-ended environment.
+In this paper, we introduce a new task of affordance grounding based on natural
+language instructions and propose a novel framework, WorldAfford. Our framework uses LLMs to process natural language instructions and employs SAM and
+CLIP for object segmentation and selection. We further propose a WeightedAffordance Grouding 17
+Context Broadcasting module, allowing WorldAfford to localize affordance regions of multiple objects. Additionally, we present a new dataset, LLMaFF, to
+benchmark this task. The experimental results demonstrate that WorldAfford
+outperforms the other state-of-the-art methods for affordance grounding on both
+the AGD20K dataset and the new LLMaFF dataset.
                     </p>
 
                 </div>
@@ -373,11 +306,12 @@ instruction.
 <section class="section" id="BibTeX">
     <div class="container is-max-widescreen content">
         <h2 class="title">BibTeX</h2>
-        <pre><code>@article{qin2023mp5,
-  title={MP5: A Multi-modal Open-ended Embodied System in Minecraft via Active Perception},
-  author={Yiran Qin and Enshen Zhou and Qichang Liu and Zhenfei Yin and Lu Sheng and Ruimao Zhang and Yu Qiao and Jing Shao},
-  booktitle={arXiv preprint arxiv:2312.07472},
-  year={2023}
+        <pre><code>@article{chen2024worldafford,
+  title={WorldAfford: Affordance Grounding based on Natural Language Instructions},
+  author={Chen, Changmao and Cong, Yuren and Kan, Zhen},
+  journal={arXiv preprint arXiv:2405.12461},
+  year={2024}
+}
 }</code></pre>
     </div>
 </section>
